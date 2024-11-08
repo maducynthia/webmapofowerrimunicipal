@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68ff94d7faa162263db11f020205228a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68ff94d7faa162263db11f020205228a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68ff94d7faa162263db11f020205228a = L.map(
+                "map_68ff94d7faa162263db11f020205228a",
+                {
+                    center: [5.4760701764705875, 7.0235052882352935],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a6f7b3a93423e2be583012ac8bae251f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a6f7b3a93423e2be583012ac8bae251f.addTo(map_68ff94d7faa162263db11f020205228a);
+        
+    
+            var marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_171b3ce7fad13d81bc3e25cf1f909834 = L.marker(
+                [5.4733659, 7.0192671],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_431868a0a30d77f38c4f330d847f8dbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_171b3ce7fad13d81bc3e25cf1f909834.setIcon(icon_431868a0a30d77f38c4f330d847f8dbe);
+        
+    
+        var popup_6fa3e86f9462ce2359d8ec0043187641 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_867d614b312c038e2bb797153e816624 = $(`<div id="html_867d614b312c038e2bb797153e816624" style="width: 100.0%; height: 100.0%;"><strong>Imo concorde hotel</strong><br>Off PortHarcourt road <br>Hotel</div>`)[0];
+                popup_6fa3e86f9462ce2359d8ec0043187641.setContent(html_867d614b312c038e2bb797153e816624);
+            
+        
+
+        marker_171b3ce7fad13d81bc3e25cf1f909834.bindPopup(popup_6fa3e86f9462ce2359d8ec0043187641)
+        ;
+
+        
+    
+    
+            marker_171b3ce7fad13d81bc3e25cf1f909834.bindTooltip(
+                `<div>
+                     Imo concorde hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a452d7f6425996437277af8662beb2e7 = L.marker(
+                [5.4739586, 7.013978],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_a6e29e109323515a02a17c6e0a33e416 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a452d7f6425996437277af8662beb2e7.setIcon(icon_a6e29e109323515a02a17c6e0a33e416);
+        
+    
+        var popup_d8a50797ec8a9cb386e52f2a8dbec25d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dda2c3cf3b4a82796369aa1a43242ae8 = $(`<div id="html_dda2c3cf3b4a82796369aa1a43242ae8" style="width: 100.0%; height: 100.0%;"><strong>Imo house of Assembly</strong><br>Off PortHarcourt road <br>House of Assembly</div>`)[0];
+                popup_d8a50797ec8a9cb386e52f2a8dbec25d.setContent(html_dda2c3cf3b4a82796369aa1a43242ae8);
+            
+        
+
+        marker_a452d7f6425996437277af8662beb2e7.bindPopup(popup_d8a50797ec8a9cb386e52f2a8dbec25d)
+        ;
+
+        
+    
+    
+            marker_a452d7f6425996437277af8662beb2e7.bindTooltip(
+                `<div>
+                     Imo house of Assembly
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e188eb14f5e64e06baf73beb697ddfa7 = L.marker(
+                [5.4890303, 7.0206452],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_b16801691166de5417e99ce7cb19d683 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e188eb14f5e64e06baf73beb697ddfa7.setIcon(icon_b16801691166de5417e99ce7cb19d683);
+        
+    
+        var popup_1bc26d78846f5ebdf55a1d6a0266c6ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc1235d04e34b632c9fb1c38e2ac1d14 = $(`<div id="html_dc1235d04e34b632c9fb1c38e2ac1d14" style="width: 100.0%; height: 100.0%;"><strong>Maria assumpta Cathedra</strong><br>Asumpta Avenue<br>Church</div>`)[0];
+                popup_1bc26d78846f5ebdf55a1d6a0266c6ec.setContent(html_dc1235d04e34b632c9fb1c38e2ac1d14);
+            
+        
+
+        marker_e188eb14f5e64e06baf73beb697ddfa7.bindPopup(popup_1bc26d78846f5ebdf55a1d6a0266c6ec)
+        ;
+
+        
+    
+    
+            marker_e188eb14f5e64e06baf73beb697ddfa7.bindTooltip(
+                `<div>
+                     Maria assumpta Cathedra
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_94c0705aef4ab9f5ae938cd3e207c67f = L.marker(
+                [5.4831565, 7.0405294],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_8edfb32efe316c37e8d0dc80c7303536 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_94c0705aef4ab9f5ae938cd3e207c67f.setIcon(icon_8edfb32efe316c37e8d0dc80c7303536);
+        
+    
+        var popup_2449f3204d8c84a5a4e57d5cc38766db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1841137dc0355577d447bd3ce88d5d68 = $(`<div id="html_1841137dc0355577d447bd3ce88d5d68" style="width: 100.0%; height: 100.0%;"><strong>Dan Anyiam Stadium</strong><br>Wetheral Road Owerri<br>Stadium</div>`)[0];
+                popup_2449f3204d8c84a5a4e57d5cc38766db.setContent(html_1841137dc0355577d447bd3ce88d5d68);
+            
+        
+
+        marker_94c0705aef4ab9f5ae938cd3e207c67f.bindPopup(popup_2449f3204d8c84a5a4e57d5cc38766db)
+        ;
+
+        
+    
+    
+            marker_94c0705aef4ab9f5ae938cd3e207c67f.bindTooltip(
+                `<div>
+                     Dan Anyiam Stadium
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1f66a83d8748d863391617ce78e6dda7 = L.marker(
+                [5.4934754, 7.0375355],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_b944e4d10b46949d8c3841d0306b8a68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f66a83d8748d863391617ce78e6dda7.setIcon(icon_b944e4d10b46949d8c3841d0306b8a68);
+        
+    
+        var popup_dc69ddaa97079b9f9e8e06ae67641399 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_504192699f0d4f2ebcff37ef401d5045 = $(`<div id="html_504192699f0d4f2ebcff37ef401d5045" style="width: 100.0%; height: 100.0%;"><strong>Mbari Cultural art</strong><br>Ikenegbu Owerri<br>Arts</div>`)[0];
+                popup_dc69ddaa97079b9f9e8e06ae67641399.setContent(html_504192699f0d4f2ebcff37ef401d5045);
+            
+        
+
+        marker_1f66a83d8748d863391617ce78e6dda7.bindPopup(popup_dc69ddaa97079b9f9e8e06ae67641399)
+        ;
+
+        
+    
+    
+            marker_1f66a83d8748d863391617ce78e6dda7.bindTooltip(
+                `<div>
+                     Mbari Cultural art
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e7497eed7b48acb18a4eaea4a105b39c = L.marker(
+                [5.4737728, 7.0192571],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_b887b87cb4980bc5c09414b00f9b314e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e7497eed7b48acb18a4eaea4a105b39c.setIcon(icon_b887b87cb4980bc5c09414b00f9b314e);
+        
+    
+        var popup_fcd867eb74dc9e11a89273465db84538 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c7f920f8375c015d421723592b68efa = $(`<div id="html_4c7f920f8375c015d421723592b68efa" style="width: 100.0%; height: 100.0%;"><strong>Children Amusement park</strong><br>Concorde Ave, Owerri <br>Amusement Park</div>`)[0];
+                popup_fcd867eb74dc9e11a89273465db84538.setContent(html_4c7f920f8375c015d421723592b68efa);
+            
+        
+
+        marker_e7497eed7b48acb18a4eaea4a105b39c.bindPopup(popup_fcd867eb74dc9e11a89273465db84538)
+        ;
+
+        
+    
+    
+            marker_e7497eed7b48acb18a4eaea4a105b39c.bindTooltip(
+                `<div>
+                     Children Amusement park
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2b6ab15b884779717b63ea93af5e8f1c = L.marker(
+                [5.4587645, 7.0272974],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_d6ba18f424dc4e0b14b54457d2e04187 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b6ab15b884779717b63ea93af5e8f1c.setIcon(icon_d6ba18f424dc4e0b14b54457d2e04187);
+        
+    
+        var popup_5cd43e549276478f85e178b25e93707d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bf1c4ec96a003c8d665f0b643be960e = $(`<div id="html_2bf1c4ec96a003c8d665f0b643be960e" style="width: 100.0%; height: 100.0%;"><strong>Akachi monument</strong><br>Wetheral Road Owerri<br>Structure</div>`)[0];
+                popup_5cd43e549276478f85e178b25e93707d.setContent(html_2bf1c4ec96a003c8d665f0b643be960e);
+            
+        
+
+        marker_2b6ab15b884779717b63ea93af5e8f1c.bindPopup(popup_5cd43e549276478f85e178b25e93707d)
+        ;
+
+        
+    
+    
+            marker_2b6ab15b884779717b63ea93af5e8f1c.bindTooltip(
+                `<div>
+                     Akachi monument
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4f3c58e81abc5156fdf24a98ddfc2c44 = L.marker(
+                [5.479443, 7.012586],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_0cbefb31fa479dafe763e975ca58481c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4f3c58e81abc5156fdf24a98ddfc2c44.setIcon(icon_0cbefb31fa479dafe763e975ca58481c);
+        
+    
+        var popup_a961c4a250a224c6509dee2356b8053c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b47459fb52a1f080e841ef1d534946a = $(`<div id="html_2b47459fb52a1f080e841ef1d534946a" style="width: 100.0%; height: 100.0%;"><strong>Immaculate Royal International Hotel</strong><br> Port Harcourt Rd Owerri<br>3 Star Hotel</div>`)[0];
+                popup_a961c4a250a224c6509dee2356b8053c.setContent(html_2b47459fb52a1f080e841ef1d534946a);
+            
+        
+
+        marker_4f3c58e81abc5156fdf24a98ddfc2c44.bindPopup(popup_a961c4a250a224c6509dee2356b8053c)
+        ;
+
+        
+    
+    
+            marker_4f3c58e81abc5156fdf24a98ddfc2c44.bindTooltip(
+                `<div>
+                     Immaculate Royal International Hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_66f9bf1619abca3052dc792708ebc4cc = L.marker(
+                [5.493471, 7.032423],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_dd45fa8c295d5d631ba624cce113ba93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_66f9bf1619abca3052dc792708ebc4cc.setIcon(icon_dd45fa8c295d5d631ba624cce113ba93);
+        
+    
+        var popup_c81b8c18b1358f59302e0b37e69941a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4f7d26e8b3aa2d6dcdbf13a2fb0038b = $(`<div id="html_b4f7d26e8b3aa2d6dcdbf13a2fb0038b" style="width: 100.0%; height: 100.0%;"><strong>Rockview Hotels Owerri</strong><br> government station, layout, Owerri , Imo<br>4 Star Hotel</div>`)[0];
+                popup_c81b8c18b1358f59302e0b37e69941a9.setContent(html_b4f7d26e8b3aa2d6dcdbf13a2fb0038b);
+            
+        
+
+        marker_66f9bf1619abca3052dc792708ebc4cc.bindPopup(popup_c81b8c18b1358f59302e0b37e69941a9)
+        ;
+
+        
+    
+    
+            marker_66f9bf1619abca3052dc792708ebc4cc.bindTooltip(
+                `<div>
+                     Rockview Hotels Owerri
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_67cb0de22e423d59d1e8d7160849b777 = L.marker(
+                [5.463534, 7.025689],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_bea22d2b450644a3c20de8a2e22fb816 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67cb0de22e423d59d1e8d7160849b777.setIcon(icon_bea22d2b450644a3c20de8a2e22fb816);
+        
+    
+        var popup_b26d3b9c091005fae967655bd28ec8bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e6f6d7d7339c24d1ce27cf01ba144d9 = $(`<div id="html_4e6f6d7d7339c24d1ce27cf01ba144d9" style="width: 100.0%; height: 100.0%;"><strong>Protea Hotel Owerri Select</strong><br>Plot H/1 Nekede Pocket Layout Protea Road, Owerri  Imo<br>3 Star Hotel</div>`)[0];
+                popup_b26d3b9c091005fae967655bd28ec8bf.setContent(html_4e6f6d7d7339c24d1ce27cf01ba144d9);
+            
+        
+
+        marker_67cb0de22e423d59d1e8d7160849b777.bindPopup(popup_b26d3b9c091005fae967655bd28ec8bf)
+        ;
+
+        
+    
+    
+            marker_67cb0de22e423d59d1e8d7160849b777.bindTooltip(
+                `<div>
+                     Protea Hotel Owerri Select
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_40e5b7e9b44019b2d1d42b12054765ba = L.marker(
+                [5.473191, 7.027497],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_5341b228fe2c6bbe716e14190d230719 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_40e5b7e9b44019b2d1d42b12054765ba.setIcon(icon_5341b228fe2c6bbe716e14190d230719);
+        
+    
+        var popup_acaf8ae865e18884e4760ab5b87381b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14697b9b14274bbe3500422a220557e3 = $(`<div id="html_14697b9b14274bbe3500422a220557e3" style="width: 100.0%; height: 100.0%;"><strong>Full Moon Hotels</strong><br>Plot H-1 Fullmoon Avenue, by Akanchawa Road<br>4 Star Hotel</div>`)[0];
+                popup_acaf8ae865e18884e4760ab5b87381b9.setContent(html_14697b9b14274bbe3500422a220557e3);
+            
+        
+
+        marker_40e5b7e9b44019b2d1d42b12054765ba.bindPopup(popup_acaf8ae865e18884e4760ab5b87381b9)
+        ;
+
+        
+    
+    
+            marker_40e5b7e9b44019b2d1d42b12054765ba.bindTooltip(
+                `<div>
+                     Full Moon Hotels
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_714d839e82febea4718092944a42eede = L.marker(
+                [5.471409, 7.004266],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_cd6c78dccbbabed3a6268e367cf2487a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_714d839e82febea4718092944a42eede.setIcon(icon_cd6c78dccbbabed3a6268e367cf2487a);
+        
+    
+        var popup_61fcdd630e67b845b7f462ed7735410d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4ae61e352570e2ab3013ef3d348dfad = $(`<div id="html_b4ae61e352570e2ab3013ef3d348dfad" style="width: 100.0%; height: 100.0%;"><strong>Golden Tulip Hotel, Owerri</strong><br>SUBEB Junction, Off, Port Harcourt Rd, Owerri<br>3 Star Hotel</div>`)[0];
+                popup_61fcdd630e67b845b7f462ed7735410d.setContent(html_b4ae61e352570e2ab3013ef3d348dfad);
+            
+        
+
+        marker_714d839e82febea4718092944a42eede.bindPopup(popup_61fcdd630e67b845b7f462ed7735410d)
+        ;
+
+        
+    
+    
+            marker_714d839e82febea4718092944a42eede.bindTooltip(
+                `<div>
+                     Golden Tulip Hotel, Owerri
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_777c985d758dc137b0a4e25e4ffa1f53 = L.marker(
+                [5.470825, 7.021561],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_87a515bde5b75ede7a87f01a06c385f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_777c985d758dc137b0a4e25e4ffa1f53.setIcon(icon_87a515bde5b75ede7a87f01a06c385f7);
+        
+    
+        var popup_7bc92a35f555c68b66e870b44ea02c86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_751c84c2aeb3252d8c3286af98d0397c = $(`<div id="html_751c84c2aeb3252d8c3286af98d0397c" style="width: 100.0%; height: 100.0%;"><strong>Kelvic Suites</strong><br>Concorde Ave, Owerri 460281, Imo<br>3 Star Hotel</div>`)[0];
+                popup_7bc92a35f555c68b66e870b44ea02c86.setContent(html_751c84c2aeb3252d8c3286af98d0397c);
+            
+        
+
+        marker_777c985d758dc137b0a4e25e4ffa1f53.bindPopup(popup_7bc92a35f555c68b66e870b44ea02c86)
+        ;
+
+        
+    
+    
+            marker_777c985d758dc137b0a4e25e4ffa1f53.bindTooltip(
+                `<div>
+                     Kelvic Suites
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d60f03d50bfa45e1a33189c6412bad03 = L.marker(
+                [5.494951, 7.039237],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_fd60fef81cf935bf96a1f85c59a132ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d60f03d50bfa45e1a33189c6412bad03.setIcon(icon_fd60fef81cf935bf96a1f85c59a132ea);
+        
+    
+        var popup_cf167bae663aee8283d70e762f1dc926 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df1a44b85d1bfba655b4f7b5b71f53d5 = $(`<div id="html_df1a44b85d1bfba655b4f7b5b71f53d5" style="width: 100.0%; height: 100.0%;"><strong>Benchmark Hotel Owerri</strong><br>Oduobi Crescent, By Cherubim Junction Owerri 460281, Imo<br>1 Star Hotel</div>`)[0];
+                popup_cf167bae663aee8283d70e762f1dc926.setContent(html_df1a44b85d1bfba655b4f7b5b71f53d5);
+            
+        
+
+        marker_d60f03d50bfa45e1a33189c6412bad03.bindPopup(popup_cf167bae663aee8283d70e762f1dc926)
+        ;
+
+        
+    
+    
+            marker_d60f03d50bfa45e1a33189c6412bad03.bindTooltip(
+                `<div>
+                     Benchmark Hotel Owerri
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_1864d9b69117d887d798b6a486f452a2 = L.marker(
+                [5.489303, 7.027883],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_8dd5eba7c5db96bf6676c7421225cbae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1864d9b69117d887d798b6a486f452a2.setIcon(icon_8dd5eba7c5db96bf6676c7421225cbae);
+        
+    
+        var popup_2e4d7069022e447f3dd328488770af21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd5f86339c1b6635eff1dc056c99085b = $(`<div id="html_dd5f86339c1b6635eff1dc056c99085b" style="width: 100.0%; height: 100.0%;"><strong>Toprate Luxury Hotel</strong><br>5 Chiddi Akurunwa Street, Off Portharcourt Rd, Owerri 100000<br>3 Star Hotel</div>`)[0];
+                popup_2e4d7069022e447f3dd328488770af21.setContent(html_dd5f86339c1b6635eff1dc056c99085b);
+            
+        
+
+        marker_1864d9b69117d887d798b6a486f452a2.bindPopup(popup_2e4d7069022e447f3dd328488770af21)
+        ;
+
+        
+    
+    
+            marker_1864d9b69117d887d798b6a486f452a2.bindTooltip(
+                `<div>
+                     Toprate Luxury Hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_119aa0ff9e62df06e10d21f873a768a6 = L.marker(
+                [5.48233, 7.015145],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_a38fdc1c8d7d028fa832e77e846599c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_119aa0ff9e62df06e10d21f873a768a6.setIcon(icon_a38fdc1c8d7d028fa832e77e846599c3);
+        
+    
+        var popup_3249a355cbe51c32f38c951fc3e5e850 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01d4fe66d431c30de8f08331a868c325 = $(`<div id="html_01d4fe66d431c30de8f08331a868c325" style="width: 100.0%; height: 100.0%;"><strong>Owerri Hotel Plaza</strong><br>Port Harcourt Rd, Owerri<br>Hotel</div>`)[0];
+                popup_3249a355cbe51c32f38c951fc3e5e850.setContent(html_01d4fe66d431c30de8f08331a868c325);
+            
+        
+
+        marker_119aa0ff9e62df06e10d21f873a768a6.bindPopup(popup_3249a355cbe51c32f38c951fc3e5e850)
+        ;
+
+        
+    
+    
+            marker_119aa0ff9e62df06e10d21f873a768a6.bindTooltip(
+                `<div>
+                     Owerri Hotel Plaza
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_cc5dfd08d1ced651f6e768e2d2be7047 = L.marker(
+                [5.477714, 7.05565],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_31a5f1537b7619ae0838866430cd5897 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc5dfd08d1ced651f6e768e2d2be7047.setIcon(icon_31a5f1537b7619ae0838866430cd5897);
+        
+    
+        var popup_d881876c701664837c1521bdfa17b297 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd828e6c0377b7e0dca0b464726d0565 = $(`<div id="html_dd828e6c0377b7e0dca0b464726d0565" style="width: 100.0%; height: 100.0%;"><strong>Owerri Mall </strong><br>Egbu Rd, Owerri 460281, Imo<br>Shopping mall</div>`)[0];
+                popup_d881876c701664837c1521bdfa17b297.setContent(html_dd828e6c0377b7e0dca0b464726d0565);
+            
+        
+
+        marker_cc5dfd08d1ced651f6e768e2d2be7047.bindPopup(popup_d881876c701664837c1521bdfa17b297)
+        ;
+
+        
+    
+    
+            marker_cc5dfd08d1ced651f6e768e2d2be7047.bindTooltip(
+                `<div>
+                     Owerri Mall 
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_431f2e3eb24d71dddc6da89406a8bdd5 = L.marker(
+                [5.465359, 7.043955],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_960574bef8cc4f8e6b069a6fbe04f33f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_431f2e3eb24d71dddc6da89406a8bdd5.setIcon(icon_960574bef8cc4f8e6b069a6fbe04f33f);
+        
+    
+        var popup_a25c7028077c89683deafdd0a4ea32f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8e401f959dae75029ec1b78744114af = $(`<div id="html_f8e401f959dae75029ec1b78744114af" style="width: 100.0%; height: 100.0%;"><strong>Dream World Amusement Park</strong><br>Owerri 460281 Imo<br>Amusement Park</div>`)[0];
+                popup_a25c7028077c89683deafdd0a4ea32f2.setContent(html_f8e401f959dae75029ec1b78744114af);
+            
+        
+
+        marker_431f2e3eb24d71dddc6da89406a8bdd5.bindPopup(popup_a25c7028077c89683deafdd0a4ea32f2)
+        ;
+
+        
+    
+    
+            marker_431f2e3eb24d71dddc6da89406a8bdd5.bindTooltip(
+                `<div>
+                     Dream World Amusement Park
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_795fac593d08087b12083bb8095596b7 = L.marker(
+                [5.472686, 7.043453],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_0ad03fa37d59a68d5ecf5b7da15030ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_795fac593d08087b12083bb8095596b7.setIcon(icon_0ad03fa37d59a68d5ecf5b7da15030ab);
+        
+    
+        var popup_fdf0dbd3ed6d08ec58f68816b58c3029 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_433607d213273e906c3ce33e27dd9f6f = $(`<div id="html_433607d213273e906c3ce33e27dd9f6f" style="width: 100.0%; height: 100.0%;"><strong>Otamiri River</strong><br>Along Akachi Road<br>River</div>`)[0];
+                popup_fdf0dbd3ed6d08ec58f68816b58c3029.setContent(html_433607d213273e906c3ce33e27dd9f6f);
+            
+        
+
+        marker_795fac593d08087b12083bb8095596b7.bindPopup(popup_fdf0dbd3ed6d08ec58f68816b58c3029)
+        ;
+
+        
+    
+    
+            marker_795fac593d08087b12083bb8095596b7.bindTooltip(
+                `<div>
+                     Otamiri River
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_d5701c53234c89fe3924657772b4fb8b = L.marker(
+                [5.478273, 7.021283],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_129d7fb4f0d7015ab770a205eda8359e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d5701c53234c89fe3924657772b4fb8b.setIcon(icon_129d7fb4f0d7015ab770a205eda8359e);
+        
+    
+        var popup_8e2adb3b6f1aa320c1e1aba494f9087b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d40c905031af287e3d056c19d2e9931 = $(`<div id="html_7d40c905031af287e3d056c19d2e9931" style="width: 100.0%; height: 100.0%;"><strong>Hero's square</strong><br>Owerri 460281<br>Amusement Park</div>`)[0];
+                popup_8e2adb3b6f1aa320c1e1aba494f9087b.setContent(html_7d40c905031af287e3d056c19d2e9931);
+            
+        
+
+        marker_d5701c53234c89fe3924657772b4fb8b.bindPopup(popup_8e2adb3b6f1aa320c1e1aba494f9087b)
+        ;
+
+        
+    
+    
+            marker_d5701c53234c89fe3924657772b4fb8b.bindTooltip(
+                `<div>
+                     Hero's square
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_289886cb470710639d09b8e097b2851a = L.marker(
+                [5.471672, 7.0175],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_02822a0007b331f7bddbb13e1a20ef91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_289886cb470710639d09b8e097b2851a.setIcon(icon_02822a0007b331f7bddbb13e1a20ef91);
+        
+    
+        var popup_8099e973c66772bf2fdb16beb367d339 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2dff2e03ddded1b4abd359b8a4d8698 = $(`<div id="html_f2dff2e03ddded1b4abd359b8a4d8698" style="width: 100.0%; height: 100.0%;"><strong>All seasons hotel</strong><br>Plot 5047-5049 Commercial<br>2 Star Hotel</div>`)[0];
+                popup_8099e973c66772bf2fdb16beb367d339.setContent(html_f2dff2e03ddded1b4abd359b8a4d8698);
+            
+        
+
+        marker_289886cb470710639d09b8e097b2851a.bindPopup(popup_8099e973c66772bf2fdb16beb367d339)
+        ;
+
+        
+    
+    
+            marker_289886cb470710639d09b8e097b2851a.bindTooltip(
+                `<div>
+                     All seasons hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_0df6d8cdf0bf6a9812c3a640918074ad = L.marker(
+                [5.469518, 7.0123915],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_9a3b077c98f56e862eee679aa113e270 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0df6d8cdf0bf6a9812c3a640918074ad.setIcon(icon_9a3b077c98f56e862eee679aa113e270);
+        
+    
+        var popup_b51a4a4003863ae716af5aa1e0e5bc85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7a7beaf4fa3ccb1d75c77c4bf186ff0 = $(`<div id="html_b7a7beaf4fa3ccb1d75c77c4bf186ff0" style="width: 100.0%; height: 100.0%;"><strong>Villa garden hotel</strong><br>Plot 5028 Commercial <br>2 Star Hotel</div>`)[0];
+                popup_b51a4a4003863ae716af5aa1e0e5bc85.setContent(html_b7a7beaf4fa3ccb1d75c77c4bf186ff0);
+            
+        
+
+        marker_0df6d8cdf0bf6a9812c3a640918074ad.bindPopup(popup_b51a4a4003863ae716af5aa1e0e5bc85)
+        ;
+
+        
+    
+    
+            marker_0df6d8cdf0bf6a9812c3a640918074ad.bindTooltip(
+                `<div>
+                     Villa garden hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_b606f7ccaedb49c334dee9830d860ab6 = L.marker(
+                [5.473503, 7.0160867],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_0651bb4f0ab5b2aabc03738f11e3b402 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b606f7ccaedb49c334dee9830d860ab6.setIcon(icon_0651bb4f0ab5b2aabc03738f11e3b402);
+        
+    
+        var popup_e6328ea57da2575c7ffc716f87c1ebae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef21ff347b47ed26e50f506199e31ac4 = $(`<div id="html_ef21ff347b47ed26e50f506199e31ac4" style="width: 100.0%; height: 100.0%;"><strong>De Legend hotel</strong><br>New Owerri<br>3 Star Hotel</div>`)[0];
+                popup_e6328ea57da2575c7ffc716f87c1ebae.setContent(html_ef21ff347b47ed26e50f506199e31ac4);
+            
+        
+
+        marker_b606f7ccaedb49c334dee9830d860ab6.bindPopup(popup_e6328ea57da2575c7ffc716f87c1ebae)
+        ;
+
+        
+    
+    
+            marker_b606f7ccaedb49c334dee9830d860ab6.bindTooltip(
+                `<div>
+                     De Legend hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a398d64cc80323f96aa65fa41e8f07a2 = L.marker(
+                [5.473301, 7.0156983],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_7c61eacbb69dd043cadb47032c30262e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a398d64cc80323f96aa65fa41e8f07a2.setIcon(icon_7c61eacbb69dd043cadb47032c30262e);
+        
+    
+        var popup_465166be1627c03ccde689f5407a88e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cff5e4f948515fce2adc9358b4bf0810 = $(`<div id="html_cff5e4f948515fce2adc9358b4bf0810" style="width: 100.0%; height: 100.0%;"><strong>Links hotel</strong><br>Plot 5043 New Owerri<br>3 Star Hotel</div>`)[0];
+                popup_465166be1627c03ccde689f5407a88e5.setContent(html_cff5e4f948515fce2adc9358b4bf0810);
+            
+        
+
+        marker_a398d64cc80323f96aa65fa41e8f07a2.bindPopup(popup_465166be1627c03ccde689f5407a88e5)
+        ;
+
+        
+    
+    
+            marker_a398d64cc80323f96aa65fa41e8f07a2.bindTooltip(
+                `<div>
+                     Links hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_7aa372b28ed16972d4644d5290a38f2d = L.marker(
+                [5.46719, 7.0200233],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_3638ca2d553ba10db4904cd02c1358ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7aa372b28ed16972d4644d5290a38f2d.setIcon(icon_3638ca2d553ba10db4904cd02c1358ad);
+        
+    
+        var popup_e36c01992fc4dbc1e54aff7f4625b810 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58273309db6f2029b51eba9bb0ae699d = $(`<div id="html_58273309db6f2029b51eba9bb0ae699d" style="width: 100.0%; height: 100.0%;"><strong>Forever hotel</strong><br>Emmanuel K Uze Avenue<br>Hotel</div>`)[0];
+                popup_e36c01992fc4dbc1e54aff7f4625b810.setContent(html_58273309db6f2029b51eba9bb0ae699d);
+            
+        
+
+        marker_7aa372b28ed16972d4644d5290a38f2d.bindPopup(popup_e36c01992fc4dbc1e54aff7f4625b810)
+        ;
+
+        
+    
+    
+            marker_7aa372b28ed16972d4644d5290a38f2d.bindTooltip(
+                `<div>
+                     Forever hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_895951e503060341d0bfef47ec07e001 = L.marker(
+                [5.47006, 7.0137417],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_5dbb6add556b3faf4a4251f9f80fddbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_895951e503060341d0bfef47ec07e001.setIcon(icon_5dbb6add556b3faf4a4251f9f80fddbe);
+        
+    
+        var popup_fcf4ba8092a7fb41b02a6a97c1c8c270 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8937870e5f458f6fc1bb8fe671a82170 = $(`<div id="html_8937870e5f458f6fc1bb8fe671a82170" style="width: 100.0%; height: 100.0%;"><strong>Suncity and boom hotel</strong><br>New Owerri By 40 40<br>Hotel</div>`)[0];
+                popup_fcf4ba8092a7fb41b02a6a97c1c8c270.setContent(html_8937870e5f458f6fc1bb8fe671a82170);
+            
+        
+
+        marker_895951e503060341d0bfef47ec07e001.bindPopup(popup_fcf4ba8092a7fb41b02a6a97c1c8c270)
+        ;
+
+        
+    
+    
+            marker_895951e503060341d0bfef47ec07e001.bindTooltip(
+                `<div>
+                     Suncity and boom hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_fb7301912788e6fe81edc10abc2eb34f = L.marker(
+                [5.468958, 7.0124866],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_2af338d38db22ba22b990fc8cf8c3b74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fb7301912788e6fe81edc10abc2eb34f.setIcon(icon_2af338d38db22ba22b990fc8cf8c3b74);
+        
+    
+        var popup_726db4d22d92b59a4f1a4204e4c37119 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5eef9709a55f01d7fe657e5b2f4997cb = $(`<div id="html_5eef9709a55f01d7fe657e5b2f4997cb" style="width: 100.0%; height: 100.0%;"><strong>Roselife hotel</strong><br>Area B New Owerri<br>Hotel</div>`)[0];
+                popup_726db4d22d92b59a4f1a4204e4c37119.setContent(html_5eef9709a55f01d7fe657e5b2f4997cb);
+            
+        
+
+        marker_fb7301912788e6fe81edc10abc2eb34f.bindPopup(popup_726db4d22d92b59a4f1a4204e4c37119)
+        ;
+
+        
+    
+    
+            marker_fb7301912788e6fe81edc10abc2eb34f.bindTooltip(
+                `<div>
+                     Roselife hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_a377ba29eae71c6a3dac100f03d6f5db = L.marker(
+                [5.46411, 7.01131],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_42d13977759f17c0428f5986eb71819a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a377ba29eae71c6a3dac100f03d6f5db.setIcon(icon_42d13977759f17c0428f5986eb71819a);
+        
+    
+        var popup_5b7f5cc13447ba3362c9fa98cf80544d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8111139486e1305a0fab01084180d378 = $(`<div id="html_8111139486e1305a0fab01084180d378" style="width: 100.0%; height: 100.0%;"><strong>Bay view hotel</strong><br>Area B New Owerri<br>Hotel</div>`)[0];
+                popup_5b7f5cc13447ba3362c9fa98cf80544d.setContent(html_8111139486e1305a0fab01084180d378);
+            
+        
+
+        marker_a377ba29eae71c6a3dac100f03d6f5db.bindPopup(popup_5b7f5cc13447ba3362c9fa98cf80544d)
+        ;
+
+        
+    
+    
+            marker_a377ba29eae71c6a3dac100f03d6f5db.bindTooltip(
+                `<div>
+                     Bay view hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_e6c963e2536adc26886637aa6d443d20 = L.marker(
+                [5.470735, 7.0134633],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_367c39d722432d4929d386ef84651586 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e6c963e2536adc26886637aa6d443d20.setIcon(icon_367c39d722432d4929d386ef84651586);
+        
+    
+        var popup_5c7305af9f7c5c2726b115aba5c2b7e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7644181c5f727bdf9cc8cb3d6e08d77f = $(`<div id="html_7644181c5f727bdf9cc8cb3d6e08d77f" style="width: 100.0%; height: 100.0%;"><strong>Star arrival Hotel</strong><br>Plot 5032 Area B<br>Hotel</div>`)[0];
+                popup_5c7305af9f7c5c2726b115aba5c2b7e0.setContent(html_7644181c5f727bdf9cc8cb3d6e08d77f);
+            
+        
+
+        marker_e6c963e2536adc26886637aa6d443d20.bindPopup(popup_5c7305af9f7c5c2726b115aba5c2b7e0)
+        ;
+
+        
+    
+    
+            marker_e6c963e2536adc26886637aa6d443d20.bindTooltip(
+                `<div>
+                     Star arrival Hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_c690e86569c4cd965672a8e4542d8ef4 = L.marker(
+                [5.466583, 7.02036],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_8db561e56104c375478c66b95ed88dbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c690e86569c4cd965672a8e4542d8ef4.setIcon(icon_8db561e56104c375478c66b95ed88dbd);
+        
+    
+        var popup_09248d22aa8d39b33efe86beb19a94ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f5662b04934e1077a8c05f816588f89 = $(`<div id="html_3f5662b04934e1077a8c05f816588f89" style="width: 100.0%; height: 100.0%;"><strong>Oxygen and resort hotel</strong><br>Emmanuel K Uze Avenue<br>3 Star Hotel</div>`)[0];
+                popup_09248d22aa8d39b33efe86beb19a94ae.setContent(html_3f5662b04934e1077a8c05f816588f89);
+            
+        
+
+        marker_c690e86569c4cd965672a8e4542d8ef4.bindPopup(popup_09248d22aa8d39b33efe86beb19a94ae)
+        ;
+
+        
+    
+    
+            marker_c690e86569c4cd965672a8e4542d8ef4.bindTooltip(
+                `<div>
+                     Oxygen and resort hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_4c05115032ae6eb079b457cfba994dbf = L.marker(
+                [5.468913, 7.0110817],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_3dd971b6e1c91bec81b32f17ca0db4f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4c05115032ae6eb079b457cfba994dbf.setIcon(icon_3dd971b6e1c91bec81b32f17ca0db4f0);
+        
+    
+        var popup_d80036c01947c10a548bb82bf3556088 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7e5b551e387902158d4de1e77791e0c = $(`<div id="html_a7e5b551e387902158d4de1e77791e0c" style="width: 100.0%; height: 100.0%;"><strong>Skyrose hotel</strong><br>Area B New Owerri<br>3 Star Hotel</div>`)[0];
+                popup_d80036c01947c10a548bb82bf3556088.setContent(html_a7e5b551e387902158d4de1e77791e0c);
+            
+        
+
+        marker_4c05115032ae6eb079b457cfba994dbf.bindPopup(popup_d80036c01947c10a548bb82bf3556088)
+        ;
+
+        
+    
+    
+            marker_4c05115032ae6eb079b457cfba994dbf.bindTooltip(
+                `<div>
+                     Skyrose hotel
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_446dd52c8b828f9ef6d3313be5bc9c3c = L.marker(
+                [5.498793, 7.044626],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_2dc576955779defa9b61306e8f5d3ac3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_446dd52c8b828f9ef6d3313be5bc9c3c.setIcon(icon_2dc576955779defa9b61306e8f5d3ac3);
+        
+    
+        var popup_f1b87849da48e084404638fc5a86ab87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd2bcf27c7bb44a39abd3c2e47acb4d7 = $(`<div id="html_fd2bcf27c7bb44a39abd3c2e47acb4d7" style="width: 100.0%; height: 100.0%;"><strong>Aladinma Royal Suite</strong><br>Ohaozara Street, Owerri<br>Hotel</div>`)[0];
+                popup_f1b87849da48e084404638fc5a86ab87.setContent(html_fd2bcf27c7bb44a39abd3c2e47acb4d7);
+            
+        
+
+        marker_446dd52c8b828f9ef6d3313be5bc9c3c.bindPopup(popup_f1b87849da48e084404638fc5a86ab87)
+        ;
+
+        
+    
+    
+            marker_446dd52c8b828f9ef6d3313be5bc9c3c.bindTooltip(
+                `<div>
+                     Aladinma Royal Suite
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_600aeae1b3c10555701e18c5dac633ba = L.marker(
+                [5.494849, 7.039898],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_7099147ba424fdab30bcadb3cfc074c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_600aeae1b3c10555701e18c5dac633ba.setIcon(icon_7099147ba424fdab30bcadb3cfc074c0);
+        
+    
+        var popup_2003b92d2fd4727aaaf1577a33bbca81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb5b6c9c38eb3a9e95393fe0ef3afad6 = $(`<div id="html_bb5b6c9c38eb3a9e95393fe0ef3afad6" style="width: 100.0%; height: 100.0%;"><strong>Joseph's Pot</strong><br>120 Ikenegbu Owerri Owerri, Owerri, Imo<br>Resturant</div>`)[0];
+                popup_2003b92d2fd4727aaaf1577a33bbca81.setContent(html_bb5b6c9c38eb3a9e95393fe0ef3afad6);
+            
+        
+
+        marker_600aeae1b3c10555701e18c5dac633ba.bindPopup(popup_2003b92d2fd4727aaaf1577a33bbca81)
+        ;
+
+        
+    
+    
+            marker_600aeae1b3c10555701e18c5dac633ba.bindTooltip(
+                `<div>
+                     Joseph's Pot
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_56a8e9e54d858f16bcb97fc00b477550 = L.marker(
+                [5.470188, 7.001375],
+                {}
+            ).addTo(marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235);
+        
+    
+            var icon_9e9a6ead9d8cd05e9d2561f3db92739c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_56a8e9e54d858f16bcb97fc00b477550.setIcon(icon_9e9a6ead9d8cd05e9d2561f3db92739c);
+        
+    
+        var popup_156b931b9985a9cd457e8dc0c4fd9a50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a616ef8ba606dd2d96681ee445233963 = $(`<div id="html_a616ef8ba606dd2d96681ee445233963" style="width: 100.0%; height: 100.0%;"><strong>Swiss International Beland</strong><br>Plot P/14 Public Building Layout, Imo Specialist Hospital Umuguma Road<br>Hotel</div>`)[0];
+                popup_156b931b9985a9cd457e8dc0c4fd9a50.setContent(html_a616ef8ba606dd2d96681ee445233963);
+            
+        
+
+        marker_56a8e9e54d858f16bcb97fc00b477550.bindPopup(popup_156b931b9985a9cd457e8dc0c4fd9a50)
+        ;
+
+        
+    
+    
+            marker_56a8e9e54d858f16bcb97fc00b477550.bindTooltip(
+                `<div>
+                     Swiss International Beland
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235.addTo(map_68ff94d7faa162263db11f020205228a);
+        
+    
+            var marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235searchControl = new L.Control.Search({
+                layer: marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235,
+                
+                propertyName: 'location',
+                
+                collapsed: false,
+                textPlaceholder: 'Search for a city or location',
+                position:'topleft',
+            
+                initial: false,
+                
+                hideMarkerOnCollapse: true
+            
+                });
+                marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235searchControl.on('search:locationfound', function(e) {
+                    marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235.setStyle(function(feature){
+                        return feature.properties.style
+                    })
+                    
+                    if(e.layer._popup)
+                        e.layer.openPopup();
+                })
+                marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235searchControl.on('search:collapsed', function(e) {
+                        marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235.setStyle(function(feature){
+                            return feature.properties.style
+                    });
+                });
+            map_68ff94d7faa162263db11f020205228a.addControl( marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235searchControl );
+
+        
+    
+            var tile_layer_e7bb0bebb96387bd2160a74ce6ddeec0 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e \u0026mdash; Map data \u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 16, "maxZoom": 16, "minZoom": 1, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_e7bb0bebb96387bd2160a74ce6ddeec0.addTo(map_68ff94d7faa162263db11f020205228a);
+        
+    
+            var tile_layer_762b14ee9aba7153d48dd2d6875b4e27 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_762b14ee9aba7153d48dd2d6875b4e27.addTo(map_68ff94d7faa162263db11f020205228a);
+        
+    
+            var tile_layer_77c0e26fbdd502dd9d3ff49f243aa944 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}\u0026key=AlzaSyCcUskQaX1cPWgiZCKRqhFfYkevqbYtLyE",
+                {"attribution": "Google Street View", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_77c0e26fbdd502dd9d3ff49f243aa944.addTo(map_68ff94d7faa162263db11f020205228a);
+        
+    
+            var layer_control_3fc426f122c5e86a3e01f63c4ec9e968_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a6f7b3a93423e2be583012ac8bae251f,
+                    "stamenwatercolor" : tile_layer_e7bb0bebb96387bd2160a74ce6ddeec0,
+                    "cartodbpositron" : tile_layer_762b14ee9aba7153d48dd2d6875b4e27,
+                    "Street View" : tile_layer_77c0e26fbdd502dd9d3ff49f243aa944,
+                },
+                overlays :  {
+                    "macro_element_8a9faf8ecfddd6fe87dd52b030cbb235" : marker_cluster_8a9faf8ecfddd6fe87dd52b030cbb235,
+                },
+            };
+            let layer_control_3fc426f122c5e86a3e01f63c4ec9e968 = L.control.layers(
+                layer_control_3fc426f122c5e86a3e01f63c4ec9e968_layers.base_layers,
+                layer_control_3fc426f122c5e86a3e01f63c4ec9e968_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_68ff94d7faa162263db11f020205228a);
+
+        
+    
+            var locate_control_2262875fff5f1102c35c3cef7b7d59b4 = L.control.locate(
+                {}
+            ).addTo(map_68ff94d7faa162263db11f020205228a);
+            
+        
+</script>
+</html>
